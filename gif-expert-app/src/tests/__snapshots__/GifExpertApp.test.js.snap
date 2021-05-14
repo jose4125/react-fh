@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GifGrid tests should render properly 1`] = `
+<Fragment>
+  <h2>
+    gif expert app
+  </h2>
+  <AddCategory
+    onAddCategory={[Function]}
+  />
+  <hr />
+</Fragment>
+`;

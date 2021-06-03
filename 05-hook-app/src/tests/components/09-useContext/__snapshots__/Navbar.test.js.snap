@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NavBar Should render properly 1`] = `
+<nav>
+  <ul>
+    <li>
+      <NavLink
+        activeClassName="active"
+        exact={true}
+        to="/"
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        activeClassName="active"
+        to="/about"
+      >
+        About
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        activeClassName="active"
+        to="/login"
+      >
+        Login
+      </NavLink>
+    </li>
+  </ul>
+</nav>
+`;

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test HooksApp Should render properly 1`] = `
+<div
+  className="App"
+>
+  <CounterApp />
+  <CounterWithCustomHook />
+  <SimpleForm />
+  <FormWithCustomHooks />
+  <MultipleCustomHooks />
+  <FocusScreen />
+  <Memorize />
+  <MemoHook />
+  <CallbackHook />
+  <Padre />
+  <TodoApp />
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+`;

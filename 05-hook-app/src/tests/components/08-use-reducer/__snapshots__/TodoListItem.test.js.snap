@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TodoListItem should render properly 1`] = `
+<li>
+  <hr />
+  <p
+    onClick={[Function]}
+  >
+    2
+     
+    aprender react
+  </p>
+  <button
+    onClick={[Function]}
+  >
+    borrar
+  </button>
+  <hr />
+</li>
+`;

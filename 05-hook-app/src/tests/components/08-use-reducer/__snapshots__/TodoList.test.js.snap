@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test TodoList should render properly 1`] = `
+<ul>
+  <TodoListItem
+    handleComplete={[MockFunction]}
+    handleRemove={[MockFunction]}
+    index={0}
+    key="1"
+    todo={
+      Object {
+        "desc": "aprender react",
+        "done": false,
+        "id": 1,
+      }
+    }
+  />
+  <TodoListItem
+    handleComplete={[MockFunction]}
+    handleRemove={[MockFunction]}
+    index={1}
+    key="2"
+    todo={
+      Object {
+        "desc": "aprender node",
+        "done": false,
+        "id": 2,
+      }
+    }
+  />
+</ul>
+`;

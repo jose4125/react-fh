@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultipleCustomHooks tests should render properly 1`] = `
+<div>
+  <h1>
+    breaking bad quotes
+  </h1>
+  <hr />
+  <p
+    className="loading"
+  >
+    ...Loading
+  </p>
+</div>
+`;

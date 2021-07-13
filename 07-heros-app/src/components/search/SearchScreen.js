@@ -13,12 +13,9 @@ const SearchScreen = () => {
     search: q,
   });
 
-  const heroList = useMemo(
-    () => {
-      return getHeroesByName(q);
-    },
-    [q]
-  );
+  const heroList = useMemo(() => {
+    return getHeroesByName(q);
+  }, [q]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -58,15 +55,14 @@ const SearchScreen = () => {
           <hr />
           {q === "" && (
             <div className="alert alert-info">
-              no heroes to show, search heroes!!!{" "}
+              no heroes to show, search heroes!!!
             </div>
           )}
-          {q !== "" &&
-            !heroList.length && (
-              <div className="alert alert-danger">
-                there are no heroes with {q}
-              </div>
-            )}
+          {q !== "" && !heroList.length && (
+            <div className="alert alert-danger">
+              there are no heroes with {q}
+            </div>
+          )}
           {heroList.map((hero) => {
             return <HeroCard key={hero.id} {...hero} />;
           })}

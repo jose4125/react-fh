@@ -5,25 +5,16 @@ import { getHeroesById } from "../../selectors/getHeroById";
 const HeroScreen = () => {
   const { heroId } = useParams();
   const history = useHistory();
-  const hero = useMemo(
-    () => {
-      return getHeroesById(heroId);
-    },
-    [heroId]
-  );
+  const hero = useMemo(() => {
+    return getHeroesById(heroId);
+  }, [heroId]);
 
   if (!hero) {
     return <Redirect to="/" />;
   }
-  console.log(hero);
 
-  const {
-    superhero,
-    publisher,
-    alter_ego,
-    first_appearance,
-    characters,
-  } = hero;
+  const { superhero, publisher, alter_ego, first_appearance, characters } =
+    hero;
 
   const handleGoBack = () => {
     if (history.length >= 3) {

@@ -1,0 +1,11 @@
+.fab-danger {
+  border-radius: 5px;
+  bottom: 30px;
+  padding: 10px;
+  position: fixed;
+  left: 25px;
+}
+
+.fa-trash {
+  margin-right: 5px;
+}

@@ -1,9 +1,8 @@
 import { ReactElement } from 'react';
+import { AppRouter } from '../../routers/AppRouter';
+
+import './calerdarApp.css';
 
 export const CalendarApp = (): ReactElement => {
-  return (
-    <div>
-      <h1>Calendar App</h1>
-    </div>
-  );
+  return <AppRouter />;
 };

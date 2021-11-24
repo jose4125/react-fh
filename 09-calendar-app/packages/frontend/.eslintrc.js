@@ -7,7 +7,7 @@ module.exports = {
       jsx: true, // Allows for the parsing of JSX
     },
   },
-  plugins: ['@typescript-eslint', 'prettier', 'react', 'flowtype'],
+  plugins: ['@typescript-eslint', 'jsx-a11y', 'prettier', 'react'],
   settings: {
     react: {
       version: 'detect', // Tells eslint-plugin-react to automatically detect the version of React to use
@@ -19,7 +19,6 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'plugin:flowtype/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
     'prettier',

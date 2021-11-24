@@ -22,7 +22,8 @@
     "pretty": true
   },
   "include": [
-    "src"
+    "src",
+    "../shared/types.ts",
   ],
   "exclude": ["./node_modules", "./public", "./cache"]
 }

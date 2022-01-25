@@ -8,5 +8,9 @@
     "packages": [
       "packages/*"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "eslint-plugin-unicorn": "^39.0.0"
   }
 }

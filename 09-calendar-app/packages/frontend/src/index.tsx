@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { CalendarApp } from './components/CalendarApp/CalendarApp';
+import { CalendarApp } from './CalendarApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <CalendarApp />
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.querySelector('#root'),
 );
 
 // If you want to start measuring performance in your app, pass a function

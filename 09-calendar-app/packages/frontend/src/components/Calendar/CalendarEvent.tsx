@@ -1,4 +1,4 @@
-import { EventPropertiesCal } from '../../../../shared/types';
+import { EventPropertiesCal } from '@calendar/shared/src/calendar/types';
 
 export const CalendarEvent = ({ event }: EventPropertiesCal): JSX.Element => {
   const { title, user } = event;

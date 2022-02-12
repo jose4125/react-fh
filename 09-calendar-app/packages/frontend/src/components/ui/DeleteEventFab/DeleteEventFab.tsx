@@ -1,4 +1,4 @@
-import { FabProperties } from '../../../../../shared/types';
+import { FabProperties } from '@calendar/shared/src/calendar/types';
 import './styes.css';
 
 export const DeleteEventFab = ({

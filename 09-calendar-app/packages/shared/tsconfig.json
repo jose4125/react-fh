@@ -15,8 +15,9 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "pretty": true
+    "pretty": true,
+    "rootDir": "src",
+    "outDir": "dist"
   },
-  "include": ["src"],
-  "exclude": ["./node_modules", "./public", "./cache"]
+  "include": ["src"]
 }

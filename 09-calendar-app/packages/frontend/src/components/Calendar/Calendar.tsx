@@ -15,7 +15,7 @@ import addHours from 'date-fns/addHours';
 
 import { Navbar } from '../ui/Navbar/Navbar';
 import { CalendarEvent } from '../calendar/CalendarEvent';
-import { EventCal } from '../../../../shared/types';
+import { EventCal } from '@calendar/shared/src/calendar/types';
 import { CalendarModal } from './CalendarModal';
 import {
   cleanActiveEvent,

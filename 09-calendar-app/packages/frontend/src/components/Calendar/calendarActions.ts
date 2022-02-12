@@ -1,4 +1,4 @@
-import { CalendarAction, EventCal } from '../../../../shared/types';
+import { CalendarAction, EventCal } from '@calendar/shared/src/calendar/types';
 import { types } from './constants';
 
 export const setActiveEvent = (event: EventCal): CalendarAction => ({

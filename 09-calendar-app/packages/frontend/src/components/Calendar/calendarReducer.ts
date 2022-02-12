@@ -2,7 +2,7 @@ import {
   CalendarAction,
   EventCal,
   EventCalState,
-} from '../../../../shared/types';
+} from '@calendar/shared/src/calendar/types';
 
 import addHours from 'date-fns/addHours';
 import { types } from './constants';

@@ -26,7 +26,7 @@ import {
   CalendarModalProperties,
   CheckDatesError,
   EventCal,
-} from '../../../../shared/types';
+} from '@calendar/shared/src/calendar/types';
 
 import './modal.css';
 import { format } from 'date-fns';

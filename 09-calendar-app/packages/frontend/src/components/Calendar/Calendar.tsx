@@ -14,7 +14,7 @@ import enUS from 'date-fns/locale/en-US';
 import addHours from 'date-fns/addHours';
 
 import { Navbar } from '../ui/Navbar/Navbar';
-import { CalendarEvent } from '../calendar/CalendarEvent';
+import { CalendarEvent } from './CalendarEvent';
 import { EventCal } from '@calendar/shared/src/calendar/types';
 import { CalendarModal } from './CalendarModal';
 import {

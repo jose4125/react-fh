@@ -5,23 +5,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.front.dev
+    volumes:
+      - ".:/usr/app"
+      - "/usr/app/packages/shared/node_modules"
+      - "/usr/app/packages/frontend/node_modules"
     environment:
       - NODE_ENV=development
       - CHOKIDAR_USEPOLLING=true
     ports:
       - 3333:3000
-    volumes:
-      - ./packages:/usr/
-      - /usr/shared/node_modules
-      - /usr/app/node_modules
     stdin_open: true
-
-  backend:
-    container_name: backend-calendar
-    build:
-      context: ./packages/backend
-      dockerfile: Dockerfile.back.dev
-
-    volumes:
-      - ./packages/backend:/usr/app
-      - /usr/app/node_modules

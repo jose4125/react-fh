@@ -1,15 +1,10 @@
-FROM node:14 as builder
+FROM node:16.13.0-alpine
 ENV NODE_ENV=development
-ENV PATH /app/node_modules/.bin:$PATH
+ENV PATH /usr/app/frontend/node_modules/.bin:$PATH
 RUN yarn global add typescript
-WORKDIR /usr/shared/
-COPY ./packages/shared/package.json .
-RUN yarn install
-COPY ./packages/shared/ .
-WORKDIR /usr/app/
-COPY ./packages/frontend/package.json .
-RUN yarn install \
-    && yarn add react-scripts@4.0.3 -g
-COPY ./packages/frontend/ .
+WORKDIR /usr/app
+COPY . .
+RUN yarn workspace @calendar/shared install
+RUN yarn workspace frontend install
 EXPOSE 3000
-CMD ["npm", "start"]
+CMD ["yarn", "workspace", "frontend", "start"]
